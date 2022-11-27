@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main()
+{
+    char s[20];
+    int i,count=0;
+
+    gets(s);
+    for(i=0; i<strlen(s);i++)
+    {
+        if(s[i] != ' ')
+            count=count+1;
+    }
+    printf("%s : %d\n",s,count);
+
+    return 0;
+}
