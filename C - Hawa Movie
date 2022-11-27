@@ -1,0 +1,30 @@
+
+#include<stdio.h>
+
+int main()
+{
+
+    int i,t,tk,num,div;
+
+    scanf("%d",&t);
+
+    for(i=1; i<=t; i++)
+    {
+        scanf("%d %d",&tk,&num);
+        div=tk/num;
+        if(div>=1000)
+            printf("Case %d: VIP\n",i);
+        else if(div<1000 && div>=800)
+            printf("Case %d: Regular\n",i);
+
+        else if(div<800 && div>=500)
+            printf("Case %d: Local\n",i);
+
+        else if(div<500)
+            printf("Case %d: Aske amar mon valo nei :(\n",i);
+
+            }
+
+    return 0;
+}
+
