@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+
+    int n,k,i,count=0,yes;
+
+    scanf("%d %d",&n,&k);
+    int num[n];
+    for(i=0; i<n; i++)
+    {
+        scanf("%d ",&num[i]);
+
+        yes=num[k-1];
+    }
+
+    for(i=0; i<n; i++)
+    {
+        if(num[i]>=yes && yes>0)
+            count=count+1;
+        else if(num[i]>yes && yes==0)
+            count=count+1;
+
+    }
+
+    printf("%d\n",count);
+
+    return 0;
+}
