@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main()
+{
+    int i,a,b,c,d,e,f=0;
+
+    scanf("%d",&a);
+
+    for(i=1;i<=a;i++)
+    {
+        scanf("%d",&b);
+        scanf("%d",&c);
+        scanf("%d",&d);
+      e=b+c+d;
+      if(e>=2)
+      {
+          f=f+1;
+      }
+    }
+    printf("%d\n",f);
+}
